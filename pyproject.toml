@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dice-dynamic-in-context"
+version = "0.1.0"
+description = "Clean implementation of Dynamic In-Context Example Selection for ReAct-style QA agents."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "numpy>=1.24",
+  "openai>=1.0",
+  "requests>=2.31",
+  "sentence-transformers>=2.7",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+gemma = ["torch>=2.0", "transformers>=4.40"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
