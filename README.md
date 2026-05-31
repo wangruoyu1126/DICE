@@ -1,6 +1,6 @@
 # DICE: Dynamic In-Context Example Selection
 
-This repository contains cleaned code and data for the paper `2586_DICE_Dynamic_In_Context_E`.
+This repository contains cleaned code and data for the paper `DICE: Dynamic In-Context Example Selection in LLM Agents via Efficient Knowledge Transfer`.
 
 DICE retrieves demonstrations dynamically at each agent run. For a current question/context, a knowledge extractor first summarizes the general reasoning knowledge needed for the task. The retriever embeds that extracted knowledge and selects the closest demonstrations from a demo pool. The selected trajectories are then inserted into a ReAct-style prompt for question answering with Wikipedia search and lookup actions.
 
